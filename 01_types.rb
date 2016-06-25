@@ -1,5 +1,7 @@
 #
-# This is showing the basic types used in programming.
+# This is showing the basic data types used in programming.
+# With this types, you can create more complex one. For instance
+# a type Color composed of 3 Integer (RGB) and 1 Float (transparency).
 #
 
 # String
@@ -25,18 +27,18 @@ false
 3e-2
 
 #
-# Here are two advanced types.
+# Here are two data structures that are widely used. 
 #
 
-# Array
+# Array or vector
 
 [1, 2, 3]
 
-# Hash
+# Hash or associative array
 
 { "Alice" => "female", "Bob" => "male" }
 
 #
 # There is more: Set, SortedSet, Trie, Symbol, etc.
-# Feel free to ask questions about them later.
+# Feel free to ask questions about them after having a look at their documentation.
 #

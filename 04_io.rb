@@ -26,6 +26,15 @@ text = gets
 # Exercise:
 #
 # Write a program that greet you by your name.
-# The program should Ask you for your name, lets say you answer Alice.
-# After that, the program write you a nice "Good morning, Alice!".
+# The program should ask you for your name, lets say you answer Alice.
+# After that, the program write you a nice "Good morning Alice!".
 #
+
+# Debugging
+
+# To debug a Ruby program, you can use the `pry-byebug` gem. To do so:
+#
+#   - At the beginning of a program add: `require "pry-byebug"`
+#   - At some point, add the following line: `binding.pry`
+#
+# This will open an interactive session with all the previous context.
