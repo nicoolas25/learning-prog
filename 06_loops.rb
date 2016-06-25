@@ -60,7 +60,8 @@ end
 #
 #
 # Write a program that uses a loop to calculate the remaining of
-# an integer division (ie: 4 / 3 has a remaining of 1).
+# an integer division (ie: 4 / 3 has a remaining of 1). The program will prompt
+# the user for the numbers.
 #
 #
 # Write a calculator program that never stops.
