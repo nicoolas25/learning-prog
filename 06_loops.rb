@@ -68,3 +68,11 @@ end
 # Hint: Look at the String#split documentation:
 #
 #   - http://devdocs.io/ruby~2.3/bigdecimal#method-i-split
+#
+#
+# Write a program that find the maximum number between its arguments.
+# Use a loop and not the Enumerable#max method.
+#
+# Hint: Look at the ARGV constant:
+#
+#   - http://devdocs.io/ruby~2.3/globals_rdoc#ARGV
