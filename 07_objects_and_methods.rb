@@ -11,13 +11,13 @@
 
 # Class declaration
 
-class Player
+class Account
 end
 
 # Instanciation
 
-player = Player.new
-player.class
+account = Account.new
+account.class
 
 # Everything is object
 
@@ -32,21 +32,21 @@ player.class
 
 # Methods
 
-class Player
+class Account
   def name
     return "Alice"
   end
 end
 
-player_1 = Player.new
-player_2 = Player.new
+account_1 = Account.new
+account_2 = Account.new
 
-player_1.name
-player_2.name
+account_1.name
+account_2.name
 
 # Instance variables & parameters
 
-class Player
+class Account
   def name
     return @name
   end
@@ -56,16 +56,16 @@ class Player
   end
 end
 
-player_1 = Player.new
-player_2 = Player.new
-player_1.name
-player_1.name = "Alice"
-player_1.name
-player_2.name
+account_1 = Account.new
+account_2 = Account.new
+account_1.name
+account_1.name = "Alice"
+account_1.name
+account_2.name
 
-# Initialization, default parameters & attr_reader
+# Constructor, default parameters & attr_reader
 
-class Player
+class Account
   def initialize(name, money = 0)
     @name = name
     @money = money
@@ -78,9 +78,9 @@ class Player
   attr_reader :money
 end
 
-player = Player.new("Alice")
-player.name
-player.money
+account = Account.new("Alice")
+account.name
+account.money
 
 
 #
@@ -103,17 +103,17 @@ player.money
 #     - the password contains at least 1 uppercase letter and 1 lowercase letter
 #
 #
-# Add to the `Player` class two methods that are adding or removing money:
+# Add to the `Account` class two methods that are adding or removing money:
 #
 #   - `deposit(amount)`
 #   - `withdraw(amount)`
 #
 # What can go wrong with these methods?
 #
-# Both of these methods return a `MoneyOperationResult` instance. Here is the
+# Both of these methods return a `OperationResult` instance. Here is the
 # implementation of such a class:
 #
-# class MoneyOperationResult
+# class OperationResult
 #   attr_accessor :reason
 #
 #   def initialize(success, reason = nil)
@@ -123,6 +123,16 @@ player.money
 #   def success?
 #     @success
 #   end
+#
+#   def to_s
+#     if success?
+#       "Success"
+#     elsif reason.nil?
+#       "Failure: #{reason}"
+#     else
+#       "Failure: no reason given"
+#     end
+#   end
 # end
 #
-# What is the interest of using the `MoneyOperationResult` class?
+# What is the interest of using the `OperationResult` class?
