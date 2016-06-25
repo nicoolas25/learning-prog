@@ -102,6 +102,8 @@ account.money
 #     - the password is at least 6 character long
 #     - the password contains at least 1 uppercase letter and 1 lowercase letter
 #
+# Hint: Have a look at the Regexp class.
+#
 #
 # Add to the `Account` class two methods that are adding or removing money:
 #
