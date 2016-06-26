@@ -35,16 +35,6 @@ for element in collection
 end
 
 #
-# Enumerable module: http://devdocs.io/ruby~2.3/enumerable
-#
-
-# Each
-
-collection.each do |element|
-  puts "#{element} is in the collection"
-end
-
-#
 # Exercise
 #
 # What is the following program doing:

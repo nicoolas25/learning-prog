@@ -33,9 +33,10 @@ end
 #
 # Your developping a game and want to keep track of your customer. Some
 # customers are paying other aren't. Every customer have in common their
-# id, name, password, email, and registration date. Customers that are
-# paying have also a date of last payment. Customers that are by default
-# in trial for 30 days.
+# id, name, email, and registration date. Customers that are paying have
+# also a date of last payment. Customers that are by default in trial
+# for 30 days. PayingCustomer can play as long as their payment is in the
+# last 30 days.
 #
 # Write a program that can tell if a customer can play the game or not. You
 # must use 2 classes: `Customer` and `PayingCustomer`. Each of the classes
