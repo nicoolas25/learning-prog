@@ -73,3 +73,15 @@ end
 #   prompt_age = Proc.new { prompt_user("How old are you?") }
 #   prompt_integer_age = compose(prompt_age, convert_to_integer)
 #   age = prompt_integer_age.call
+#
+#
+# Write a method that takes an Array and a Proc (or block). It returns `true` when for
+# each element of the array, the proc evaluate to true. For instance:
+#
+#   all_true?(array) { |element| element.even? }
+#
+# Note that there is a special syntax for this:
+#
+#   all_true?(array, &:even?)
+#
+# You will see later that such a method already exists.

@@ -88,6 +88,7 @@ account.money
 #
 #   - Return keyword is implicit
 #   - There is also `attr_writer` and `attr_accessor`
+#   - It is possible to write methods that are not inside an object
 #
 
 #
